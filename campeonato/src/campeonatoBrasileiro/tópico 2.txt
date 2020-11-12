@@ -1,0 +1,34 @@
+2.	Especificação Geral do Sistema. 
+
+2.1	Descrição dos requisitos de usuário. 
+2.1.1	Breve Descrição
+O projeto aborda e elabora a implementação do sistema para simulação de resultados dos jogos relacionados ao Campeonato Brasileiro (“Brasileirão”), do ano de 2020 e como finalidade, definir, por meios das simulações, o time campeão brasileiro de futebol. Os times pré-definidos, no total de 20 times do Campeonato Brasileiro de 2020, sendo os seguintes: Athletico Paranaense, Atlético Goianiense,  Atlético Mineiro, Bahia, Botafogo, Ceará, Corinthians, Coritiba, Flamengo, Fluminense, Fortaleza, Goiás, Grêmio, Internacional, Palmeiras, Red Bull Bragantino, Santos, São Paulo, Sport e Vasco da Gama. O software tem o escopo somente para a simulação automaticamente dos resultados de pontos e gols dos times envolvidos, gerando, portanto, o campeão brasileiro de 2020 com base nesses resultados. O software não receberá nenhum input do usuário com novas adições de times ou manipulação dos resultados. O usuário, em sua perspectiva deverá somente executar o simulador e obter a simulação.
+
+2.1.2	Requisitos do produto
+2.1.2.1	Requisitos 1
+Não haverá input de times pelo usuário, a simulação é feita automaticamente, atendendo apenas ao botão de Simulação, utilizado pelo usuário para executar o programa.
+
+2.2	Requisitos Ambientais
+Os ambientes presentes na elaboração do sistema, se tornam presentes através da utilização de IDE – Eclipse e NetBeans para o desenvolvimento do código na linguagem de programação Java. Há presença da Interface Gráfica para a execução do programa. Cada execução do programa, apresentará apenas uma única vez por execução os resultados obtidos e o campeão brasileiro de 2020. A simulação poderá ser realizada quantas vezes necessário e de acesso ilimitado, respeitando a regra de única simulação por vez. 
+
+
+
+2.3	Comportamento
+São necessários 20 times pré-definidos, dos quais citados em 2.1.1 Breve Descrição.
+O sistema atua com o escopo de rodadas, no total de 38º rodadas, nenhuma ausência, sem intervalo em semanas dos jogos. Portanto, os 20 times, jogarão entre si, excluindo-se a opção de jogar consigo mesmo, em dois turnos. Sendo o 1º turno com 19º rodadas e o 2º turno, com as 19º rodadas restantes. 
+Requisito que aborda a pontuação, no que tange a somente 3 possíveis retorno da partida: Vitória, empate e derrota.
+Vitória: A vitória é atribuída ao time que marcar mais gols que o adversário na mesma partida. Cada vitória de um time sobre o outro, concede ao time vencedor da partida, o total de 3 pontos e ao time derrotado o total de 0 pontos na partida. 
+Empate: Concede igualmente aos times jogadores o total e 1 ponto, caso os números de gols sejam iguais durante a presente partida. 
+Derrota: O time que sofrer derrota, portanto, não marcou mais gols que o seu adversário e atribui-se de uma derrota, concedendo 3 pontos ao vencedor e 0(zero) pontos ao time derrota. 
+Os valores de vitória e derrota, não são acumulados dentro de uma mesma partida, sendo, portanto, atribuído somente 3 pontos ao vencedor e 0(zero) pontos ao time perdedor. 
+Os valores de vitórias e empates são armazenados e são acumulativos, carregados conforme o decorrer do campeonato para a definição do campeão brasileiro.
+Limitações do escopo geral.
+O simulador, portanto, é regido pelas regras de matemática e não ultrapassará os seguintes limites estabelecidos:
+Total de 380 jogos por simulação, sendo 190 jogos no 1º turno e 190 jogos no 2º turno. 
+Total de 38 partidas por time, sendo obrigatória o valor exato de partidas, não ocorrerá valores acima e abaixo desse número.
+Limite não superior a 114 pontos concedidos ao campeão brasileiro de 2020. Regendo do pressuposto que um time seja vencedor de todas as partidas que participará.
+Limite não inferior a 0 (zero) pontos, concedido ao time no pressuposto que não vença nenhuma partida jogada.
+O escopo de gols definidos para a simulação do campeonato será de no máximo 4 gols por time por rodada e não inferior a 0(zero).
+2.4	Usabilidade
+A usabilidade do sistema restringe-se somente a execução da simulação por parte do cliente, consumidor, usuário final do sistema. Não serão aceitos nenhum input de usuário de times ou manipulação do resultado. A interação do usuário com o sistema deverá somente ao executar a simulação e retornar para nova simulação de resultados. 
+
